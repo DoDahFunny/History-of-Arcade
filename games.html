@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Games - Arcade Game History</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Silkscreen' type="text/css" rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="description" content="Arcade History">
+  <meta name="keywords" content="old games, arcade, nostalgia, video games, games, history, retro games, github, classic games, arcade cabinets, game development, gaming history, arcade games, vintage games, game design, game culture, gaming nostalgia, arcade machines, game evolution, gaming industry, game mechanics, pixel art, game graphics, game soundtracks, arcade gameplay, game genres, multiplayer games, single-player games, arcade tournaments, history of arcade,">
+  <meta name="author" content="Balin Michaw, William George">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdd0;
+}
+
+main {
+  padding: 0 20px; /* moved padding here instead of body */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.container img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.container .text {
+  max-width: 600px;
+}
+
+.video-container {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 90%;
+  max-width: 800px;
+  height: 450px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* Fixed header */
+header {
+  background-color: #838383;
+  color: #000;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 1000;
+}
+
+header a#logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#computerSpaceCanvas {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#gameOverScreen {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+    <img src="images/Logo.png" alt="Arcade Game History Logo" width="150" id="logo">
+    </a>
+    <nav>
+      <a href="games.html">Timeline</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="text-align: center;">Cabinet Timeline</h2>
+
+    <section class="container" style="justify-content: center; text-align: center; flex-direction: column; align-items: center;">
+      <div class="text" style="max-width: 600px;">
+        <h2>Computer Space (1971)</h2>
+          <p>
+            released in 1971 and Created by Nolan Bushnell and Ted Dabney, Computer Space was the first commercially available arcade video game. It featured a rocket ship shooting flying saucers in space. this game laid the groundwork for the arcade game industry. So try our clone of it now!
+          </p>
+        <canvas id="computerSpaceCanvas" width="600" height="400" style="border:2px solid rgb(255, 255, 255); background:black; display: block; margin: 0 auto;"></canvas>
+        <div id="gameOverScreen" style="display:none; position:absolute; left:0; top:0; width:600px; height:400px; background:rgba(0,0,0,0.85); color:#fff; font-family:'Silkscreen',sans-serif; font-size:2.5em; text-align:center; justify-content:center; align-items:center; border-radius:10px;">
+          <div style="position:relative; top:40%; transform:translateY(-50%);">
+            GAME OVER<br><span style='font-size:0.5em;'>Click to Restart</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<div class="container"> <!--Pong section-->
+  <a href="https://archive.org/details/pong_mame">
+    <img src="images/pong.png" alt="pong cabinet photo" style="width:300px;height:auto;">
+  </a>
+  <div class="text">
+    <h2>Pong (1972)</h2>
+    <p>
+      Created in 1972 by Allan Alcorn, Pong has grown a reputation for its simple design that gets the job done. Famed for being the first commercially successful video game, it has stood the test of time for many years. Inspired by table tennis, players control paddles to bounce a small ball back and forth. Pong ignited the arcade gaming industry and was a main catalyst for the video game revolution in the 70s.
+    </p>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="1200" src="https://www.youtube.com/embed/hj-N0zYrS7o?si=ixWbs4XgZzU9cWTf" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+</div>
+
+<div class="container"> <!--Asteroids section-->
+  <a href="https://arcader.com/asteroids/">
+    <img src="images/asteroids.png" alt="asteroids cabinet photo" style="width:300px;height:auto;">
+  </a>
+  <div class="text">
+    <h2>Asteroids(1979)</h2>
+    <p>
+      Developed by Atari in 1979, Asteroids is a multidirectional shooter based in space. The games accurate demonstration of both inertia and momentum set it apart from other arcade games at the time. Asteroids was one of the first games to allow the player to enter their high score which fueled gaming competition.
+    </p>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Ydu8UhIjeU?si=GQwF2mKptyta1hpm" title="YouTube video player" style="border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="container"> <!--Pac-Man section-->
+  <a href="https://archive.org/details/pacman_nes_2">
+    <img src="images/pac_man.png" alt="pac_man cabinet photo" style="width:300px;height:auto;">
+  </a>
+  <div class="text">
+    <h2>Pac-Man (1980)</h2>
+    <p>
+      Developed by Namco and designed by Toru Iwatani, the simple yet colorful design of Pac-Man made it different from the other games of the time. The characters within the game made it a global icon who's impact is still being felt today through merchandising, cartoons, and sequels. Pac-Man was release in 1980 and featured maze chase gameplay where the player collected dots while trying to avoid colorful ghosts.
+    </p>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-CbyAk3Sn9I?si=Cx-H0lITihCULtqx" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    
+<div class="container"> <!--Donkey_Kong section-->
+  <a href="https://archive.org/details/dkong_mame#">
+    <img src="images/donkey_kong.png" alt="Donkey Kong cabinet photo" style="width:300px;height:auto;">
+  </a>
+  <div class="text">
+    <h2>Donkey Kong (1981)</h2>
+    <p>
+      Developed by Nintendo in 1981, Donkey Kong marked the creator of Mario(originally called Jumpman) and the titular ape, Donkey Kong. Donkey Kong was created by Shigeru Miyamoto and challenged players to climb platforms and jump over obstacles to rescue a damsel in distress. The game was inspired by King Kong and after it's release it quickly skyrocketed into success.
+    </p>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/rYNMatF5hcU?si=Zki6u6g82h2bhCFB" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="container"> <!--Galaga section-->
+  <a href="https://archive.org/details/galaga_nes_2#">
+    <img src="images/galaga.png" alt="Galaga cabinet photo" style="width:300px;height:auto;">
+  </a>
+  <div class="text">
+    <h2>Galaga (1981)</h2>
+    <p>
+      Developed by Namco in 1981, Galaga is a fixed shooter game and a sequel to Galaxian(1979). Galaga built on it's predecessor and added power-ups, improved visuals, and more dynamic enemy movement. In the game players pilot a ship and shoot at waves of enemy, alien ships. Galaga is a fan favorite game and beloved by many.
+    </p>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dvjapcHsqXY?si=uRHRyRHCqQvqaDBK" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="container"> <!--Street FighterII section-->
+  <a href="https://archive.org/details/msdos_Street_Fighter_II_The_World_Warrior_1993#">
+    <img src="images/streetfighterii.png" alt="streetfighterii cabinet photo" style="width:300px;height:auto;">
+  </a>
+  <div class="text">
+    <h2>Street Fighter II (1991)</h2>
+    <p>
+      Developed by Capcom in 1987, Street Fighter II: The World Warrior revolutionized the fighting game genre. Introducing a roster of unique characters each with special moves and fighting styles Street Fighter 2 became a global sensation. Street Fighter 2 laid the foundations for competitive gaming and Street Fighter 2 tournaments are still held today.
+    </p>
+  </div>
+</div>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6OlenbCC4WI?si=sg9D2JoNDQhErNk3" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Arcade Game History</p>
+  </footer>
+  <script>
+  const canvas = document.getElementById("computerSpaceCanvas");
+  const ctx = canvas.getContext("2d");
+
+  const keys = {};
+  document.addEventListener("keydown", e => {
+  if (e.code === "Space") {
+    e.preventDefault(); // Stop page from scrolling
+  }
+  keys[e.code] = true;
+});;
+  document.addEventListener("keyup", e => keys[e.code] = false);
+
+  const toRadians = angle => angle * (Math.PI / 180);
+  const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+
+  let player = { x: 300, y: 200, angle: 0, speed: 0, radius: 15 };
+  let bullets = [];
+  let saucers = [
+    { x: 100, y: 100, dx: 1.2, dy: 1, radius: 18 },
+    { x: 500, y: 150, dx: -1, dy: 1.4, radius: 18 }
+  ];
+
+  function shoot() {
+    bullets.push({
+      x: player.x,
+      y: player.y,
+      dx: Math.cos(toRadians(player.angle)) * 5,
+      dy: Math.sin(toRadians(player.angle)) * 5,
+      radius: 3
+    });
+  }
+
+  function update() {
+    if (keys["ArrowLeft"]) player.angle -= 3;
+    if (keys["ArrowRight"]) player.angle += 3;
+    if (keys["ArrowUp"]) {
+      player.x += Math.cos(toRadians(player.angle)) * 2;
+      player.y += Math.sin(toRadians(player.angle)) * 2;
+    }
+
+    if (keys["Space"] && bullets.length < 5) {
+      shoot();
+      keys["Space"] = false;
+    }
+
+    player.x = (player.x + canvas.width) % canvas.width;
+    player.y = (player.y + canvas.height) % canvas.height;
+
+    bullets.forEach(b => {
+      b.x += b.dx;
+      b.y += b.dy;
+    });
+
+    bullets = bullets.filter(b => b.x > 0 && b.x < canvas.width && b.y > 0 && b.y < canvas.height);
+
+    saucers.forEach(s => {
+      s.x += s.dx;
+      s.y += s.dy;
+      if (s.x < 0 || s.x > canvas.width) s.dx *= -1;
+      if (s.y < 0 || s.y > canvas.height) s.dy *= -1;
+      // Check for collision with player
+      if (distance(s, player) < s.radius + player.radius) {
+        endGame();
+      }
+    });
+
+    let newSaucers = [];
+    saucers.forEach(s => {
+      let hit = false;
+      for (let b of bullets) {
+        if (distance(s, b) < s.radius + b.radius) {
+          hit = true;
+          break;
+        }
+      }
+      if (!hit) {
+        newSaucers.push(s);
+      } else {
+        // Spawn a new saucer at random position
+        newSaucers.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          dx: (Math.random() * 2 - 1.2),
+          dy: (Math.random() * 2 - 1.2),
+          radius: 18
+        });
+      }
+    });
+
+    saucers = newSaucers;
+  }
+
+  function drawShip(x, y, angle) {
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(toRadians(angle));
+    ctx.beginPath();
+    ctx.moveTo(15, 0);
+    ctx.lineTo(-10, -10);
+    ctx.lineTo(-5, 0);
+    ctx.lineTo(-10, 10);
+    ctx.closePath();
+    ctx.strokeStyle = "white";
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawShip(player.x, player.y, player.angle);
+
+    ctx.fillStyle = "white";
+    bullets.forEach(b => {
+      ctx.beginPath();
+      ctx.arc(b.x, b.y, b.radius, 0, Math.PI * 2);
+      ctx.fill();
+    });
+
+    ctx.strokeStyle = "red";
+    saucers.forEach(s => {
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+      ctx.stroke();
+    });
+  }
+
+  let gameOver = false;
+  const gameOverScreen = document.getElementById("gameOverScreen");
+
+  function endGame() {
+    gameOver = true;
+    gameOverScreen.style.display = "flex";
+  }
+
+  function loop() {
+  if (!gameOver) {
+    update();
+    draw();
+    requestAnimationFrame(loop);
+  } else {
+    draw(); // draw one last frame
+    gameOverScreen.style.display = "flex";
+  }
+}
+
+  canvas.addEventListener("click", () => {
+    if (gameOver) {
+      player = { x: 300, y: 200, angle: 0, speed: 0, radius: 15 };
+      bullets = [];
+      saucers = [
+        { x: 100, y: 100, dx: 1.2, dy: 1, radius: 18 },
+        { x: 500, y: 150, dx: -1, dy: 1.4, radius: 18 }
+      ];
+      gameOver = false;
+      gameOverScreen.style.display = "none";
+      loop();
+    }
+  });
+
+  loop();
+</script>
+</body>
+</html>
