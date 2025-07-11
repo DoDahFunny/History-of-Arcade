@@ -5,5 +5,5 @@ the live site is https://dodahfunny.github.io/History-of-Arcade/
 
 we use HTML, CSS, and JavaScript
 
-Made by [dodahfunny]([url](https://github.com/dodahfunny)) and [Shinestar696]([url](https://github.com/Shinestar696)
+Made by [dodahfunny](https://github.com/dodahfunny) and [Shinestar696](https://pages.github.com/).
 
